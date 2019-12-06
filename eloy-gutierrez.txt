@@ -1,0 +1,169 @@
+Copy the questions below into the firt-lastname.txt file on your github repo - answer each question and then push your changes. 
+
+    1. What is Semantic HTML?
+    It is html that has meaning.
+
+    2. What is HTML used for? 
+    It is is used to structer the items in a webapge.
+
+    3. What is an attribute and where do we put it?
+    An attribute is a word that is used in the opening tag of an element to control an element's behaviour. For example,
+    <div class = "newDiv"></div> The word "class" is an attribute.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    The h1 tag is the main header in a page. It is used around the most important text in a page.
+    It should only be used once.
+
+    5. Name two tags that have required attributes
+    The img tag has a required src attribute. The a tag has a required href attribute.
+
+    6. What do we put in the head of our HTML document?
+    We put a link to our css stylesheet. We put our meta tags. We also put the title tag.
+
+    7. What is an id?
+    It is used to identify a specific element in our html so that we can later use it in CSS.
+    There can only be one of each. For example, if there is a div that has an id of "div1" then
+    there can only be one "div1" id in that whole html document.
+
+    8. What elements can I add an id to?
+    all elements.
+
+    9. How many times can I use the same id on a page?
+    You can only use it once. 
+
+    10. What is a class?
+    A class can be used to identify an element or a group of elements.
+
+    11. What elements can I add a class to?
+    all elements.
+
+    12. How many times can I use the same class on a page?
+    You can name as many tags as you would lioke with the same class name.
+
+    13. How do I get my link to open in a new tab?
+    On your anchor tag you would add <a target="_blank" rel="noopener noreferrer" href="url">Link</a>. Acording to a stackoverflow answer. 
+    "The rel="noopener noreferrer" is not mandatory, but it's a recommended security measure."
+
+    14. What is the alt attribute used for?
+    It is used in img tags and acording to W3C "The alt attribute specifies an alternative text to be used, if an image cannot be displayed. 
+    The value of the alt attribute can be read by screen readers. This way, someone "listening" to the webpage, e.g. a vision 
+    impaired person, can "hear" the element."
+
+    15. How do I reference an id?
+    To reference an id in a CSS file you would use the syntax 
+    #idname {
+
+    }
+
+    16. What is the difference between a section and a div
+    A section is used for semantics and grouping of content. A div can be used with attributes that can later be referenced in CSS files.
+
+    17. What is CSS used for?
+    It is used to style the page and make it look pretty. 
+
+    18. How to we select an element? Example - every h2 on the page
+    h2 {
+
+    }
+    The syntax above would select all h2 elements unless the h2 element has an id or class that is also referenced in the CSS file.
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    An class can be used on multiple elements. So you would use it when you would need multiple elements to have the same style.
+    For example, if h1 and p tag would have the same font.
+    An id would be used when want only one specific element to have a specific syle.
+
+    20. How do we select classes in CSS?
+    .className {
+
+    }
+
+    21. How do we select a p element with a single class of “human””?
+    .human p{
+
+    }
+
+    22. What is a parent child selector? When would this be useful?
+    Im assuming this question is asking about "element1 > element2". This selector selects all element2
+    where the parent is a element1 element. For example, div > p selects all <p> elements where the parent is a <div> element.
+
+    23. How do you select all links within a div with the class of sidebar?
+    .sidebar a{
+
+    }
+
+    24. What is a pseudo selector?
+    It is used to change the state of an element after something happens such a the color changing when you hover over something.
+    .className:hover{
+        Whatever I put in here will change the state of className when I hover over it in the web page.
+    }
+    
+    25. What do we use the change the spacing between lines?
+    To change spacing you would use the line-height property in your CSS file.
+    p {
+        line-height: 30px;
+    }
+
+    26. What do we use to change the spacing between letters?
+    h1 {
+        letter-spacing: 3px;
+    }
+    You would use the letter spacing property.
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    p {
+        text-transform: uppercase; or text-transform: lowercase; or text-transform: capitalize;
+    }
+    You would use the text-transform property.
+
+    28. How do I add a 1px border around my div that is dotted and black?
+    div {
+        border-style: dotted;
+        border-color: black;
+    }
+
+    29. How do I select everything on the page?
+    * {
+
+    }
+
+    30. How do I write a comment in CSS?
+    /*This is a comment */
+
+    31. How do I find out what file I am in, when I am using the command line?
+    pwd
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    rm file.txt 
+    You need to be careful with this command because it will permanently delete your file. It won't go into trash bin.
+    You won't be able to retrive it after hit enter and execute the command.
+
+    34. Why should I use version control?
+    It is used in the real world. If you are working with a team of devs and your team releases a new version of an app
+    and this new verison is bad or faulty then using version control you can go back to the previous version of the app. 
+
+    35. How often should I commit to github?
+    I would assume it is when you finish a new feature that you are working on and you want that feature to be commited to master.
+
+    36. What is the command we would use to push our repo up to github? 
+    git push origin branchname
+
+    37. Walk me through Lambda's git flow.
+    1. fork
+    2. add TL as collaborator
+    3. clone the repo
+    4. make branch 'firstName-lastName'
+    5. push your branch to git
+    6. Submit pull request
+    7. Add TL as collaborator 
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    2. What happens when an element is positioned absolutely? 
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    5. In your own words, explain the box model. What is the fix for the box model? 
